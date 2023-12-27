@@ -1,0 +1,18 @@
+/*
+ * HOW to detect broken pin of Arduino
+ * You need to use led 5v 5mm and a resistor 220 ohm or 330 ohm for arduino promini 5v 328p
+ * Subscribe: https://www.youtube.com/@ardujimmy
+ */
+
+#define lampu 9 //change this pin based on your broken pin's board,SEE images in this rep to find your pin path!
+
+void setup() {
+  pinMode(lampu, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(lampu, HIGH);
+  delay(1000);
+  digitalWrite(lampu, LOW);
+  delay(1000);
+}
